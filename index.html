@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Supriya Dara</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Supriya Dara</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic1.jpg" alt="Supriya Dara profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Supriya Dara</h1>
+        <p class="section__text__p2">Master of Computer Science Graduate</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/SupriyaDara_Resume_SoftwareEng.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/supriya-dara'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/darasupriya88'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/degree.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Master of Computer Science<br />Bachelor of Engineering in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I recently completed my Master of Computer Science at the University of Ottawa, graduating with a GPA of 3.72. I also hold a Bachelor's degree in Computer Science from Chaitanya Bharathi Institute of Technology, with a GPA of 8.23. I have practical experience as a Machine Learning Intern at Aarth Software, Exposys Data Labs, and National Instruments, where I developed and deployed machine learning models, built web applications, and implemented CI/CD pipelines. I possess strong skills in Python, Java, JavaScript, and various ML libraries and frameworks. My projects include a content moderation system on AWS, a biometric verification web app, an academic research portal, and a log-based anomaly detection system.
+                
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="details-container">
+            <div class="article-container">
+              <article class="experience-box">
+                <h3>Machine Learning Intern, Aarth Software, Hyderabad, India
+                    <p class="date-period">Nov’21 – Jul’22</p>
+
+                </h3>
+                <ul>
+                  <li>Built a Python web scraper with BeautifulSoup for automating metadata extraction from URLs, achieving a 98% success rate in scraping product schema from the top 5 Google search results.</li>
+                  <li>Collaborated with the DevOps team to deploy machine learning models using Docker and Kubernetes, ensuring scalability and efficient resource utilization.</li>
+                  <li>Developed RESTful APIs with Flask to facilitate model integration with front-end applications, improving user accessibility and experience.</li>
+                  <li>Conducted unit testing and code reviews to maintain high code quality and reduce bugs, adhering to Agile development methodologies.</li>
+                </ul>
+              </article>
+              <article class="experience-box">
+                <h3>Data Science Intern, Exposys Data Labs, Remote, India
+                    <p class="date-period">May’21 – Aug’21</p>
+                </h3>
+                <ul>
+                  <li>Developed a Diabetes Prediction model using the PIMA Diabetes dataset with Python, applying a variety of machine learning techniques to achieve a notable accuracy of 78% via the K-Nearest Neighbor method.</li>
+                  <li>Worked with SQL and NoSQL databases to manage and query large datasets, ensuring data integrity and availability.</li>
+                  <li>Actively participated in and contributed to team meetings, delivering comprehensive progress updates and collaborating effectively with cross-functional teams.</li>
+                </ul>
+              </article>
+              <article class="experience-box">
+                <h3>Machine Learning Intern, National Instruments (NI), Remote, India
+                <p class="date-period">May’20 – Aug’20</p>
+                </h3>
+                <ul>
+                  <li>Implemented and fine-tuned a sentiment analysis model with diverse machine learning techniques in Python, involving dataset evaluation, data visualization, and performance optimization.</li>
+                  <li>Integrated the sentiment analysis model into a web application using Flask and JavaScript, enabling real-time sentiment analysis and user interaction.</li>
+                  <li>Assisted in the design and implementation of a CI/CD pipeline using Jenkins, automating the testing and deployment of ML models.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        .experience-box {
+          background-color: #f9f9f9;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          padding: 15px;
+          margin-bottom: 15px;
+          width: 90%;
+        }
+      
+        .experience-details-container {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+      
+        .details-container {
+          width: 100%;
+        }
+      
+        .article-container {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+      
+        .date-period {
+          font-style: italic;
+          color: #555;
+          margin-bottom: 10px;
+        }
+      </style>
+      
+
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/hqdefault-523.jpg"
+                  alt="AWS Content Moderation System"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">AWS Content Moderation System</h2>
+              <div class="project-description">
+                <p>(AWS, Python, Node.js, EC2, API Gateway, Lambda, SQS, SNS, DynamoDB, CloudFormation)</p>
+                <ul>
+                  <li>Implemented and deployed a robust cloud‑based system for content moderation, enabling real‑time detection and tagging of inappropriate content.</li>
+                  <li>Developed SQS for efficient batch processing and notifications, ensuring timely alerts to administrators.</li>
+                  <li>Leveraged CloudFormation for Infrastructure as Code (IaC) to streamline deployment and maintain infrastructure consistency.</li>
+                </ul>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/darasupriya88/AWS-Content-Moderation-System'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/2.png"
+                  alt="Biometric Verification Web App"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Biometric Verification Web App</h2>
+              <div class="project-description">
+                <p>(Java, HTML, Javascript, JSP, MySQL)</p>
+                <ul>
+                  <li>Developed a web application containing encrypted fingerprint files in a database/cloud for user login verification.</li>
+                  <li>Improved user interface experience through front‑end development.</li>
+                  <li>Created a Java module converting fingerprints into Greymap matrix format based on Minutiae of fingerprints.</li>
+                </ul>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/darasupriya88/Biometric-Verification-Web-App'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/3.png"
+                  alt="Academic Research Portal Development"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Academic Research Portal Development</h2>
+              <div class="project-description">
+                <p>(React JS, NodeJs, MongoDB, SQL, Prisma ORM, GraphQL, ExpressJS)</p>
+                <ul>
+                  <li>Led a research team in developing a web portal for academic researchers to share and collaborate on research papers and datasets.</li>
+                  <li>Implemented user roles and permissions using GraphQL for efficient data querying to ensure secure access to research materials.</li>
+                </ul>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/darasupriya88/Academic-Research-Portal-Development'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/4.jpeg"
+                  alt="Log‑based Anomaly Detection"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Log‑based Anomaly Detection</h2>
+              <div class="project-description">
+                <p>(Python, PyTorch, Scikit‑learn, Transformers)</p>
+                <ul>
+                  <li>Implemented RoBERTa for feature extraction from unstructured log data, enhancing anomaly detection accuracy significantly.</li>
+                  <li>Achieved an F1‑score of 0.99 in identifying anomalous logs, surpassing traditional TF‑IDF methods.</li>
+                  <li>Validated on the Hadoop Distributed File System (HDFS) dataset.</li>
+                </ul>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/darasupriya88/Log_based_anomaly_roberta'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/5.jpeg"
+                  alt="Phishing URL Detection using RoBERTa for Feature Extraction"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Phishing URL Detection</h2>
+              <div class="project-description">
+                <p>(Python, Scikit‑learn, PyTorch, Transformers, SHAP)</p>
+                <ul>
+                  <li>Presented a machine learning-based approach to detect phishing URLs using RoBERTa for advanced feature extraction.</li>
+                  <li>Analyzed URLs through lexical, syntactic, and semantic characteristics.</li>
+                  <li>Integrated SHAP for model interpretability, providing insights into feature attributions behind each prediction.</li>
+                </ul>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/darasupriya88/Phishing-URL-Detection-using-RoBERTa-for-Feature-Extraction'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/6.png"
+                  alt="Automated Code Review with NLP"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Automated Code Review with NLP</h2>
+              <div class="project-description">
+                <p>(Python, Pandas, NumPy, Scikit-learn, NLTK, PyTorch, Transformers)</p>
+                <ul>
+                  <li>Created a RoBERTa model to enhance software development's code review process, outperforming conventional algorithms in analyzing GitHub comments for accuracy and efficiency.</li>
+                  <li>Illustrated RoBERTa's potential in automating and improving code review tasks, showcasing advancements in NLP applications within software engineering.</li>
+                </ul>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/darasupriya88/Automated-Code-Review-with-NLP'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                 
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:darasupriya99@gmail.com">darasupriya99@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/supriya-dara">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Supriya Dara. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
