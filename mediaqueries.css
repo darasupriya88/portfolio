@@ -28,6 +28,11 @@
 /* For screen sizes <= 600px */
 @media screen and (max-width: 600px) {
   #profile, #about, #experience, #projects, #contact {
+    .about-pic {
+      width: 80%; /* Adjust width as needed */
+      max-width: 300px; /* Limit maximum width */
+      height: auto; /* Maintain aspect ratio */
+    }
     height: auto;
   }
 
