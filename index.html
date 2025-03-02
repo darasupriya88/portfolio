@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Supriya Dara's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -17,9 +24,12 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+         
         </ul>
       </div>
     </nav>
+
+    <!-- Hamburger Navigation -->
     <nav id="hamburger-nav">
       <div class="logo">Supriya Dara</div>
       <div class="hamburger-menu">
@@ -29,33 +39,36 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+  <li><a href="#about" onclick="toggleMenu()">About</a></li>
+  <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+  <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+  <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  
+</div>
       </div>
     </nav>
+
+    <!-- Profile Section -->
+
+
+
     <section id="profile">
-      <div class="section__pic-container">
+      <div class="section__pic-container" data-aos="fade-up">
         <img src="./assets/fotor-2024070820837.png" alt="Supriya Dara profile picture" />
       </div>
-      <div class="section__text">
+      <div class="section__text" data-aos="fade-up">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Supriya Dara</h1>
         <p class="section__text__p2">Master of Computer Science Graduate concentration in Applied Artificial Intelligence</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/SupriyaDara_CSGrad.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/Supriya_Dara_Resume_MCS_AI.pdf')">
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+<button class="btn btn-color-1" onclick="location.href='#contact'">
+  Contact Info
+</button>
         </div>
-        <div id="socials-container">
+        <div id="socials-container" data-aos="fade-up">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
@@ -78,344 +91,303 @@
             src="./assets/leet.png"
             alt="My Leet Code profile"
             class="icon"
-            onclick="location.href='https://leetcode.com/u/sdara/'"
+            onclick="location.href='https://leetcode.com/u/darasupriya373/'"
           />
         </div>
-
-        </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
 
-        <div class="about-details-container">
-          <div class="about-containers">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      // AOS (Animate On Scroll) initialization
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+      });
 
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Master of Computer Science<br />Bachelor of Engineering in Computer Science</p>
-            </div>
+      // Toggle hamburger menu
+      function toggleMenu() {
+        const menu = document.querySelector('.menu-links');
+        menu.classList.toggle('active');
+      }
+    </script>
+    
+    
+<section id="about" class="about-section">
+  <p class="section__text__p1" data-aos="fade-up">Get To Know More</p>
+  <h1 class="title" data-aos="fade-up">About Me</h1>
+  <div class="section-container">
+    <div class="about-details-container" data-aos="fade-up">
+      <div class="about-containers">
+        <div class="details-container" data-aos="fade-right">
+          <div class="card">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Master of Computer Science <br />Bachelor of Engineering in Computer Science</p>
           </div>
-          <div class="text-container">
-            <p>
-                I recently completed my Master of Computer Science at the University of Ottawa, graduating with a GPA of 3.72. I also hold a Bachelor's degree in Computer Science from Chaitanya Bharathi Institute of Technology, with a GPA of 8.23. I have practical experience as a Machine Learning Intern at Aarth Software, Exposys Data Labs, and National Instruments, where I developed and deployed machine learning models, built web applications.. I possess strong skills in Python, Java and various ML libraries and frameworks. My remarkable projects include log-based anomaly detection system, Phishing URL Detection and Automated Code Review with NLP.
-                
-            </p>
+        </div>
+        <div class="details-container" data-aos="fade-left">
+          <div class="card">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+<p>
+  Machine Learning Engineer with experience at Aarth Software, Exposys Data Labs, and National Instruments. Developed machine learning models, built web applications, and gained hands-on expertise in NLP, computer vision, and data engineering using technologies like BERT, KNN, AWS, and TensorFlow.
+</p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-      <section id="experience" style="margin-bottom: 6rem;">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="details-container">
-            <div class="article-container">
-              <article class="experience-box">
-                <h3>Machine Learning Engineer, Aarth Software, Hyderabad, India
-                    <p class="date-period">Nov’21 – Jul’22</p>
+      <div class="text-container" data-aos="fade-up">
+<p>
+  I recently completed my Master of Computer Science at the University of Ottawa, graduating with a GPA of 9.30/10. I also hold a Bachelor's degree in Computer Science from Chaitanya Bharathi Institute of Technology, with a GPA of 8.30/10. I have gained hands-on experience as a Machine Learning Engineer at Aarth Software, Exposys Data Labs, and National Instruments, where I developed machine learning models, web scrapers, and built scalable solutions. My technical skills include Python, Java, and popular ML libraries like TensorFlow, BERT, and KNN. Notable projects include a log-based anomaly detection system, phishing URL detection, and an automated essay scoring system using NLP, which showcase my passion for creating impactful, data-driven solutions.
+</p>
+      </div>
+    </div>
+  </div>
+  <div class="arrow-container" data-aos="fade-up">
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </div>
+</section>
 
-                </h3>
-                 <ul>
-                  <li>Developed an ensemble ML model using regression algorithms, achieving 93% accuracy in predicting hospital stay lengths for diabetic patients, leveraging SVM for high performance.</li>
-                  <li>Built a Python web scraper with BeautifulSoup for automating metadata extraction from URLs, demonstrating advanced data engineering capabilities and achieving a 98% success rate in scraping product schema from the top 5 Google search results.</li>
-                  <li>Implemented an NLP project to extract and process recipes from over 100 websites, achieving 80% accuracy using BERT for ingredient parsing, text classification, and entity recognition.</li>
-                  <li>Utilized AWS S3 for efficient data storage and management during model development, streamlining data processing pipelines and improving scalability.</li>
-                  <li>Designed and created interactive dashboards using Power BI to visualize project outcomes and key performance indicators, enhancing data-driven decision-making for management.</li>
-                  <li>Collaborated effectively with cross-functional teams to translate project requirements into technical solutions. Engaged in iterative development, feedback sessions, and integrated insights from diverse stakeholders to enhance the project's outcome.</li>
-                  <li>Actively participated in team discussions and provided detailed progress updates, ensuring alignment and collaboration across technical and non-technical stakeholders.</li>
-                </ul>
 
-              </article>
-              <article class="experience-box">
-                <h3>Data Science Intern, Exposys Data Labs, Remote, India
-                    <p class="date-period">May’21 – Aug’21</p>
-                </h3>
-                <ul>
-                  <li>Engineered a Diabetes Prediction model in Python using the PIMA Diabetes dataset, achieving 88% accuracy with the KNN algorithm.</li>
-                  <li>Enhanced decision-making processes by building performance dashboards with Tableau, visualizing trends and insights in diabetes prediction outcomes.</li>
-                  <li>Deployed model workflows using AWS Lambda and ensured scalability and reliability by monitoring performance through AWS CloudWatch.</li>
-                  <li>Documented the methodology and results in a comprehensive report, demonstrating analytical and communication skills.</li>
-                </ul>
-              </article>
-              <article class="experience-box">
-                <h3>Machine Learning Intern, National Instruments (NI), Remote, India
-                m<p class="date-period">May’20 – Aug’20</p>
-                </h3>
-                <ul>
-                  <li>Developed an ensemble ML model using regression algorithms, achieving 93% accuracy in predicting hospital stay lengths for diabetic patients using SVM.</li>
-                  <li>Designed and fine-tuned a sentiment analysis model in Python, leveraging advanced ML techniques to achieve 95% accuracy.</li>
-                  <li>Conducted in-depth data analysis using Excel, utilizing pivot tables, charts, and advanced formulas for insightful visualizations and reporting.</li>
-                  <li>Explored and analyzed new and existing datasets to improve model-building pipelines and enhance prediction accuracy.</li>
-                  <li>Utilized data visualization tools like Tableau and Power BI to present insights effectively and support strategic decision-making.</li>
-                </ul>
-              </article>
-            </div>
+
+<section id="experience" style="margin-bottom: 6rem;">
+  <p class="section__text__p1" data-aos="fade-up">Explore My</p>
+  <h1 class="title" data-aos="fade-up">Experience</h1>
+  <div class="experience-details-container" data-aos="fade-up">
+    <div class="details-container">
+      <div class="article-container">
+        <!-- Experience 1 -->
+        <article class="experience-box" data-aos="fade-up">
+          <div class="job-header">
+            <h3>
+              Machine Learning Engineer, Aarth Software
+              <p class="date-period">Nov’21 – Jul’22</p>
+            </h3>
           </div>
-        </div>
-      </section>
-      
-      <style>
-        .experience-box {
-          background-color: #f9f9f9;
-          border: 1px solid #e0e0e0;
-          border-radius: 8px;
-          padding: 15px;
-          margin-bottom: 15px;
-          width: 90%;
-        }
-      
-        .experience-details-container {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-        }
-      
-        .details-container {
-          width: 100%;
-        }
-      
-        .article-container {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-        }
-      
-        .date-period {
-          font-style: italic;
-          color: #555;
-          margin-bottom: 10px;
-        }
-      </style>
-      
+          <ul>
+            <li>Led the implementation of an NLP project using BERT for automated content extraction from product listings, achieving 80% accuracy in extracting and categorizing product features.</li>
+            <li>Built a scalable web scraper using BeautifulSoup and Selenium, automating metadata extraction from over 100 e-commerce websites.</li>
+            <li>Developed and maintained ETL pipelines to efficiently manage and process large datasets.</li>
+            <li>Designed a machine learning pipeline using AWS tools, reducing model training time by 30%.</li>
+            <li>Conducted A/B testing to optimize model performance, providing insights that improved business strategy.</li>
+          </ul>
+        </article>
 
-      
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects" style="margin-bottom: 6rem;">
+        <!-- Experience 2 -->
+        <article class="experience-box" data-aos="fade-up">
+          <div class="job-header">
+            <h3>
+              Data Science Intern, Exposys Data Labs
+              <p class="date-period">May’21 – Aug’21</p>
+            </h3>
+          </div>
+          <ul>
+            <li>Collaborated with senior data scientists to perform EDA, leading to more accurate model development.</li>
+            <li>Developed a predictive model using the PIMA Diabetes dataset, achieving 88% accuracy with KNN to predict diabetes risk.</li>
+            <li>Built interactive dashboards in Tableau, improving reporting and stakeholder engagement.</li>
+          </ul>
+        </article>
+
+        <!-- Experience 3 -->
+        <article class="experience-box" data-aos="fade-up">
+          <div class="job-header">
+            <h3>
+              Machine Learning Intern, National Instruments
+              <p class="date-period">May’20 – Aug’20</p>
+            </h3>
+          </div>
+          <ul>
+            <li>Preprocessed large sensor datasets using Pandas, NumPy, and Scikit-learn, reducing model training time by 30%.</li>
+            <li>Built a computer vision model with OpenCV and TensorFlow for automated defect detection in hardware components, improving quality control by 15%.</li>
+            <li>Assisted in developing MLOps workflows using Docker, Jenkins, and Kubernetes for model deployment and monitoring.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrow -->
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+    data-aos="fade-up"
+  />
+</section>
+
+
+<section id="projects" style="margin-bottom: 6rem;">
   <p class="section__text__p1">Browse My Recent</p>
   <h1 class="title">Projects</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/4.jpeg"
-            alt="Log‑based Anomaly Detection"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Log‑based Anomaly Detection</h2>
-        <div class="project-description">
-          <p>(Python, PyTorch, Scikit‑learn, Transformers)</p>
-          <ul>
-            <li>Implemented RoBERTa for feature extraction from unstructured log data, enhancing anomaly detection accuracy significantly.</li>
-            <li>Achieved an F1‑score of 0.99 in identifying anomalous logs, surpassing traditional TF‑IDF methods.</li>
-            <li>Validated on the Hadoop Distributed File System (HDFS) dataset.</li>
-          </ul>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/darasupriya88/Log_based_anomaly_roberta'"
-          >
-            Github
-          </button>
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/5.jpeg"
-            alt="Phishing URL Detection using RoBERTa for Feature Extraction"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Phishing URL Detection</h2>
-        <div class="project-description">
-          <p>(Python, Scikit‑learn, PyTorch, Transformers, SHAP)</p>
-          <ul>
-            <li>Presented a machine learning-based approach to detect phishing URLs using RoBERTa for advanced feature extraction.</li>
-            <li>Analyzed URLs through lexical, syntactic, and semantic characteristics.</li>
-            <li>Integrated SHAP for model interpretability, providing insights into feature attributions behind each prediction.</li>
-          </ul>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/darasupriya88/Phishing-URL-Detection-using-RoBERTa-for-Feature-Extraction'"
-          >
-            Github
-          </button>
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/6.png"
-            alt="Automated Code Review with NLP"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Automated Code Review with NLP</h2>
-        <div class="project-description">
-          <p>(Python, Pandas, NumPy, Scikit-learn, NLTK, PyTorch, Transformers)</p>
-          <ul>
-            <li>Created a RoBERTa model to enhance software development's code review process, outperforming conventional algorithms in analyzing GitHub comments for accuracy and efficiency.</li>
-            <li>Illustrated RoBERTa's potential in automating and improving code review tasks, showcasing advancements in NLP applications within software engineering.</li>
-          </ul>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/darasupriya88/Automated-Code-Review-with-NLP'"
-          >
-            Github
-          </button>
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/aes.png"
-            alt="Automatic Essay Scorer"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Automatic Essay Scorer</h2>
-        <div class="project-description">
-          <p>(Python, LSTM, Word2Vec, Machine Learning)</p>
-          <ul>
-            <li>Developed a 2-layered Long Short-Term Memory (LSTM) network combined with Word2Vec embedding to rate essays from the Automated Student Assessment Prize (ASAP) dataset.</li>
-            <li>Improved model interpretability by incorporating manually crafted features and tuning hyperparameters, achieving a Quadratic Weighted Kappa (QWK) score of 0.92.</li>
-          </ul>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/darasupriya88/Automatic-Essay-Scorer-using-ML'"
-          >
-            Github
-          </button>
-        </div>
-      </div>
+  <div class="projects-container">
 
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/sli.png"
-            alt="Sign Language Interpreter using CNN"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Sign Language Interpreter using CNN</h2>
-        <div class="project-description">
-          <p>(Python, OpenCV, CNN, Deep Learning)</p>
-          <ul>
-            <li>Developed an application that translates hand gestures captured through a webcam into plain text, facilitating real-time communication using deep learning techniques.</li>
-            <li>Utilized the OpenCV library to create and preprocess the dataset of hand gestures.</li>
-            <li>Implemented a Convolutional Neural Network (CNN) model to predict hand gestures, displaying the corresponding letter when a gesture is detected.</li>
-          </ul>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/darasupriya88/Sign-Language-Interpreter-using-CNN'"
-          >
-            Github
-          </button>
-        </div>
+    <!-- Project 1 -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="article-container">
+        <img src="./assets/4.jpeg" alt="Log‑based Anomaly Detection" class="project-img" />
       </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/diabetes.webp"
-            alt="Diabetes Prediction"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Diabetes Prediction</h2>
-        <div class="project-description">
-          <p>(Python, Scikit-learn, Pandas, Matplotlib, Seaborn)</p>
-          <ul>
-            <li>Implemented a Diabetes Prediction model using the PIMA Diabetes dataset, utilizing various machine learning techniques to achieve an accuracy of 88% with the K-Nearest Neighbor method.</li>
-            <li>Documented the methodology, analysis, and results in a comprehensive report, highlighting practical applications and insights gained from the predictive modeling process.</li>
-          </ul>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/darasupriya88/End-to-End-Diabetes-Prediction-Application-Using-Machine-Learning'"
-          >
-            Github
-          </button>
-        </div>
+      <h2 class="experience-sub-title project-title">Log‑based Anomaly Detection</h2>
+      <div class="project-description">
+        <p class="project-tech-stack"><i class="fab fa-python"></i> Python, <i class="fab fa-pytorch"></i> PyTorch, <i class="fab fa-cogs"></i> Scikit-learn, <i class="fas fa-cogs"></i> Transformers</p>
+        <ul>
+          <li>Implemented RoBERTa for feature extraction from unstructured log data.</li>
+          <li>Achieved an F1-score of 0.99 in identifying anomalous logs.</li>
+          <li>Validated on the Hadoop Distributed File System (HDFS) dataset.</li>
+        </ul>
       </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/darasupriya88/Log_based_anomaly_roberta'">
+          <i class="fab fa-github"></i> Github
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="article-container">
+        <img src="./assets/5.jpeg" alt="Phishing URL Detection using RoBERTa for Feature Extraction" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">Phishing URL Detection</h2>
+      <div class="project-description">
+        <p class="project-tech-stack"><i class="fab fa-python"></i> Python, <i class="fab fa-pytorch"></i> PyTorch, <i class="fab fa-shape"></i> SHAP, <i class="fab fa-cogs"></i> Scikit-learn</p>
+        <ul>
+          <li>Machine learning-based approach to detect phishing URLs using RoBERTa.</li>
+          <li>Analyzed URLs through lexical, syntactic, and semantic characteristics.</li>
+          <li>Integrated SHAP for model interpretability.</li>
+        </ul>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/darasupriya88/Phishing-URL-Detection-using-RoBERTa-for-Feature-Extraction'">
+          <i class="fab fa-github"></i> Github
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="article-container">
+        <img src="./assets/6.png" alt="Automated Code Review with NLP" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">Automated Code Review with NLP</h2>
+      <div class="project-description">
+        <p class="project-tech-stack"><i class="fab fa-python"></i> Python, <i class="fab fa-cogs"></i> Pandas, <i class="fab fa-cogs"></i> NumPy, <i class="fab fa-cogs"></i> Scikit-learn</p>
+        <ul>
+          <li>Created a RoBERTa model to enhance code review processes.</li>
+          <li>Improved efficiency and accuracy in analyzing GitHub comments.</li>
+        </ul>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/darasupriya88/Automated-Code-Review-with-NLP'">
+          <i class="fab fa-github"></i> Github
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="article-container">
+        <img src="./assets/aes.png" alt="Automatic Essay Scorer" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">Automatic Essay Scorer</h2>
+      <div class="project-description">
+        <p class="project-tech-stack"><i class="fab fa-python"></i> Python, <i class="fab fa-cogs"></i> LSTM, <i class="fab fa-cogs"></i> Word2Vec</p>
+        <ul>
+          <li>Developed a 2-layer LSTM network combined with Word2Vec for essay scoring.</li>
+          <li>Achieved a QWK score of 0.92 for essay scoring.</li>
+        </ul>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/darasupriya88/Automatic-Essay-Scorer-using-ML'">
+          <i class="fab fa-github"></i> Github
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="article-container">
+        <img src="./assets/sli.png" alt="Sign Language Interpreter using CNN" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">Sign Language Interpreter using CNN</h2>
+      <div class="project-description">
+        <p class="project-tech-stack"><i class="fab fa-python"></i> Python, <i class="fab fa-cogs"></i> CNN, <i class="fab fa-cogs"></i> OpenCV</p>
+        <ul>
+          <li>Translated hand gestures to text using deep learning techniques.</li>
+          <li>Implemented CNN model to predict gestures and display corresponding letters.</li>
+        </ul>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/darasupriya88/Sign-Language-Interpreter-using-CNN'">
+          <i class="fab fa-github"></i> Github
+        </button>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="article-container">
+        <img src="./assets/diabetes.webp" alt="Diabetes Prediction" class="project-img" />
+      </div>
+      <h2 class="experience-sub-title project-title">Diabetes Prediction</h2>
+      <div class="project-description">
+        <p class="project-tech-stack"><i class="fab fa-python"></i> Python, <i class="fab fa-cogs"></i> Scikit-learn, <i class="fab fa-cogs"></i> Pandas</p>
+        <ul>
+          <li>Implemented a diabetes prediction model using KNN algorithm.</li>
+          <li>Achieved 88% accuracy and documented methodology in a detailed report.</li>
+        </ul>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/darasupriya88/End-to-End-Diabetes-Prediction-Application-Using-Machine-Learning'">
+          <i class="fab fa-github"></i> Github
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
 
 
+
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:darasupriya99@gmail.com">darasupriya99@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/supriya-dara">LinkedIn</a></p>
     </div>
   </div>
 </section>
 
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:darasupriya99@gmail.com">darasupriya99@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/supriya-dara">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Supriya Dara. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Supriya Dara. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
